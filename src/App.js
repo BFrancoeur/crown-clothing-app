@@ -1,12 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import CategoriesArchive from './components/categories-archive/categories-archive.component';
 
-function App() {
+
+const App = () => {
+
   return (
     <div className="App">
-     <h1>Hello, World!</h1>
+
+        <CategoriesArchive />
+
     </div>
   );
+
 }
 
 export default App;
