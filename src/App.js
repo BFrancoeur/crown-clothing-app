@@ -1,14 +1,26 @@
-import CategoriesArchive from './components/categories-archive/categories-archive.component';
 
+import { Routes, Route } from 'react-router-dom';
+
+import Home from './routes/home/home.component';
+
+const Shop = () => {
+  return <h1>This is the Shop page</h1>
+};
 
 const App = () => {
 
   return (
-    <div className="App">
 
-        <CategoriesArchive />
+    <Routes>
 
-    </div>
+      <Route path='/' element={<Home />} >
+
+        <Route path='/shop' element={<Shop />} />
+
+      </Route> 
+    
+    </Routes>
+
   );
 
 }
